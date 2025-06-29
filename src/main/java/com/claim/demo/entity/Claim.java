@@ -23,6 +23,8 @@ public class Claim {
         return emailId;
     }
 
+
+
     public Date getLastUpdated() {
         return lastUpdated;
     }
@@ -93,5 +95,4 @@ public class Claim {
 
     @Column
     private Date lastUpdated;
-
 }

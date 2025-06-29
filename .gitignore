@@ -33,5 +33,6 @@ build/
 .vscode/
 
 # Ignore application property files with secrets
+src/main/resources/application.properties
 src/main/resources/application.yml
 .env

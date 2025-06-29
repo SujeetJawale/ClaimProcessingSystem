@@ -11,4 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ClaimRepository extends JpaRepository<Claim, Long> {
 
+    List<Claim> findByUser_userId(Long userId);
+
+    List<Claim> findByClaimStatusAndLastUpdatedBefore(String claimStatus, Date lastUpdated);
 }
