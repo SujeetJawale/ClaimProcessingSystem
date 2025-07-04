@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class KafkaNotificationService {
 
-
     private static final String CLAIM_STATUS_TOPIC = "claim-status-updates";
 
     @Autowired
