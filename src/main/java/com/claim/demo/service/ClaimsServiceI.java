@@ -19,4 +19,9 @@ public interface ClaimsServiceI {
     List<ClaimDTO> findClaimsByUserId(Long userId);
 
     String getClaimStatus(Long claimId);
+
+    List<Claim> findClaimsNeedingUpdate();
+
+    void updateClaimStatus(Long claimId, String newStatus, String userEmail);
+
 }
